@@ -89,7 +89,7 @@
 }
 
 .caixa-sombra{
-    box-shadow: #8ae4ff 0px 0px 50px;
+    box-shadow: #8ae4ff 0px 0px 15px;
 }
 
 .home .max-width{
@@ -181,21 +181,21 @@ section .title::after{
     transform: translateX(-50%);
 }
 
-/* Sessão Sobre */
-
-.about, .projetos{
+.about, .projetos, .skill{
     font-family: 'Roboto', sans-serif;
     background-color: #111;
     color: #fff;
 }
 
 
-.about .about-content, .projetos .projetos-content{
+.about .about-content, .projetos .projetos-content, .skill .skill-content{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
+
+/* Sessão Sobre */
 
 .about .title::after{
     content: "Quem sou eu";
@@ -301,6 +301,16 @@ section .title::after{
     margin: 10px 0px 7px 0px;
 }
 
+/* Sessão skill */
+
+.skill .title::after{
+    content: O que faço;
+}
+
+.skill .skill-content .column{
+    width: calc(50% - 30px);
+}
+
 /* Responsividade */
 
 @media(max-width: 1300px){
@@ -388,6 +398,11 @@ section .title::after{
     .about .about-content .right{
         flex: 100%;
     }
+    
+    .projetos .projetos-content .card{
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
 
 }
 
@@ -403,6 +418,10 @@ section .title::after{
 
     .home .home-content a{
         font-size: 20px;
+    }
+
+    .projetos .projetos-content .card{
+        width: 100%;
     }
 
 }

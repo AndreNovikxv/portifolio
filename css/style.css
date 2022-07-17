@@ -93,7 +93,7 @@
 }
 
 .home .max-width{
-    margin: auto 0px auto 40px;
+    margin: auto 0 auto 40px;
 }
 
 .home .home-content .text-1{
@@ -181,7 +181,7 @@ section .title::after{
     transform: translateX(-50%);
 }
 
-.about, .projetos, .skill{
+.about, .projetos, .skill, .idiomas{
     font-family: 'Roboto', sans-serif;
     background-color: #111;
     color: #fff;
@@ -251,17 +251,17 @@ section .title::after{
 
 /* Sessão Projetos */
 
-.projetos{
+.projetos, .idiomas{
     background: #111;
     color: #fff;
 }
 
-.projetos .title::before{
+.projetos .title::before, .idiomas .title::before{
     background: #fff;
 }
 
-.projetos .title::after{
-    content: "Feitos por mim";
+.projetos .title::after, .idiomas .title::after{
+    content: "O que eu fiz";
 }
 
 .projetos .projetos-content .card{
@@ -304,11 +304,165 @@ section .title::after{
 /* Sessão skill */
 
 .skill .title::after{
-    content: O que faço;
+    content: "O que faço";
 }
 
 .skill .skill-content .column{
     width: calc(50% - 30px);
+}
+
+.skill .skill-content .left .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.skill .skill-content .left p{
+    text-align: justify;
+}
+
+.skill .skill-content .left a{
+    display: inline-block;
+    background: #20cbff;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 10px 15px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 2px solid #20cbff;
+    transition: all 0.5s ease-in-out;
+}
+
+.skill .skill-content .left a:hover{
+    color: #20cbff;
+    background: none;
+}
+
+.skill .skill-content .right .bars{
+    margin-bottom: 15px;
+}
+
+.skill .skill-content .right .info{
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skill .skill-content .right span{
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.skill .skill-content .right .line{
+    width: 100%;
+    height: 5px;
+    background: #ccc;
+    position: relative;
+}
+
+.skill .skill-content .right .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #20cbff;
+}
+
+.skill .skill-content .right .html::before{
+    width: 96%;
+}
+
+.skill .skill-content .right .css::before{
+    width: 83%;
+}
+
+.skill .skill-content .right .js::before{
+    width: 67%;
+}
+
+.skill .skill-content .right .php::before{
+    width: 58%;
+}
+
+.skill .skill-content .right .mysql::before{
+    width: 49%;
+}
+
+/* Sessão Idiomas */
+
+.idiomas .title::after{
+    content: "Niveis";
+}
+
+.idiomas .carousel .card{
+    background: #222;
+    border-radius: 5px;
+    padding: 20px 30px;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+}
+
+.idiomas .carousel .card:hover{
+    background: #20cbff;
+    box-shadow: #8ae4ff 0px 0px 15px;
+}
+
+.idiomas .carousel .card img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #20cbff;
+}
+
+.idiomas .carousel .card:hover img{
+    border: none;
+}
+
+.idiomas .carousel .card .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in-out;
+}
+
+.idiomas .carousel .card:hover .box{
+    transform: scale(1.05);
+}
+
+.idiomas .carousel .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+.owl-dots{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.owl-dot{
+    width: 15px;
+    height: 15px;
+    outline: none!important;
+    border-radius: 50%;
+    border: 2px solid #20cbff!important;
+    transition: all 0.5s ease-in-out;
+}
+
+.owl-dot.active{
+    width: 35px;
+    border-radius: 15px;
+}
+
+.owl-dot.active,
+.owl-dot:hover{
+    background: #20cbff!important;
+    box-shadow: #8ae4ff 0px 0px 15px;
 }
 
 /* Responsividade */
@@ -402,6 +556,11 @@ section .title::after{
     .projetos .projetos-content .card{
         width: calc(50% - 10px);
         margin-bottom: 20px;
+    }
+
+    .skill .skill-content .column{
+        width: 100%;
+        margin-bottom: 30px;
     }
 
 }

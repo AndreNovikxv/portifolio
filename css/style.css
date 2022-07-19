@@ -181,14 +181,13 @@ section .title::after{
     transform: translateX(-50%);
 }
 
-.about, .projetos, .skill, .idiomas{
+.about, .projetos, .skill, .idiomas, .contact{
     font-family: 'Roboto', sans-serif;
     background-color: #111;
     color: #fff;
 }
 
-
-.about .about-content, .projetos .projetos-content, .skill .skill-content{
+.about .about-content, .projetos .projetos-content, .skill .skill-content, .contact .contact-content{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -420,6 +419,7 @@ section .title::after{
 
 .idiomas .carousel .card:hover img{
     border: none;
+    box-shadow: none;
 }
 
 .idiomas .carousel .card .box{
@@ -463,6 +463,84 @@ section .title::after{
 .owl-dot:hover{
     background: #20cbff!important;
     box-shadow: #8ae4ff 0px 0px 15px;
+}
+
+/* Sessão Contato */
+
+.contact .contact-content .column{
+    width: calc(50% - 30px);
+}
+
+.contact .contact-content .left p{
+    text-align: justify;
+}
+
+.contact .contact-content .text{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.contact .contact-content .left .icons{
+    margin: 10px 0;
+}
+
+.contact .contact-content .row{
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+
+.contact .contact-content .row .info{
+    margin-left: 15px;
+}
+
+.contact .contact-content .row .info .head{
+    font-weight: 500;
+}
+
+.contact .contact-content .row ion-icon{
+    font-size: 25px;
+    color: #20cbff;
+}
+
+.contact .rigth form .fields{
+    display: flex;
+}
+
+.contact .rigth form .field, .contact .rigth form .fields .field{
+    width: 100%;
+    height: 45px;
+    margin-bottom: 15px;
+}
+
+.contact .rigth form .field input, .contact .rigth form .textarea textarea{
+    width: 100%;
+    height: 100%;
+    border: 1px solid #8ae4ff;
+    border-radius: 5px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.contact .rigth form .name{
+    margin-right: 10px;
+}
+
+.contact .rigth form .email{
+    margin-left: 10px;
+}
+
+.contact .rigth form .textarea{
+    width: 100%;
+    height: 80px;
+}
+
+.contact .rigth form .textarea textarea{
+    padding-top: 10px;
+    resize: none;
 }
 
 /* Responsividade */

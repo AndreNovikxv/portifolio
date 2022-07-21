@@ -7,6 +7,10 @@
     text-decoration: none;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 .max-width{
     max-width: 1300px;
     padding: 0px 80px;
@@ -142,6 +146,31 @@
     display: none;
 }
 
+.scroll-up-btn{
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    right: 30px;
+    bottom: 10px;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    background: #20cbff;
+    border-radius: 5px;
+    font-size: 35px;
+    z-index: 9999;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.5s ease-in-out;
+}
+
+.scroll-up-btn.show{
+    opacity: 1;
+    pointer-events: auto;
+    bottom: 30px;
+}
+
 /* Todos os codigos similares */
 
 section{
@@ -181,7 +210,7 @@ section .title::after{
     transform: translateX(-50%);
 }
 
-.about, .projetos, .skill, .idiomas, .contact{
+.about, .projetos, .skill, .idiomas, .contact, footer{
     font-family: 'Roboto', sans-serif;
     background-color: #111;
     color: #fff;
@@ -467,8 +496,16 @@ section .title::after{
 
 /* Sessão Contato */
 
+.contact .title::after{
+    content: "Fale Comigo";
+}
+
 .contact .contact-content .column{
     width: calc(50% - 30px);
+}
+
+.contact .contact-content{
+    align-items: flex-start;
 }
 
 .contact .contact-content .left p{
@@ -541,6 +578,48 @@ section .title::after{
 .contact .rigth form .textarea textarea{
     padding-top: 10px;
     resize: none;
+}
+
+.contact .rigth form .button{
+    width: 130px;
+    height: 60pxx;
+}
+
+.contact .rigth form .button button{
+    width: 100%;
+    height: 100%;
+    background: #20cbff;
+    border: 2px solid #8ae4ff;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.contact .rigth form .button button:hover{
+    color: #20cbff;
+    background: none;
+}
+
+/* Footer */
+
+footer{
+    background: #c6f2ff;
+    color: #111;
+    padding: 20px 25px;
+    text-align: center;
+}
+
+footer span a{
+    color: #20cbff;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+footer span a:hover{
+    text-decoration: underline ;
 }
 
 /* Responsividade */
@@ -636,7 +715,7 @@ section .title::after{
         margin-bottom: 20px;
     }
 
-    .skill .skill-content .column{
+    .skill .skill-content .column, .contact .contact-content .column{
         width: 100%;
         margin-bottom: 30px;
     }

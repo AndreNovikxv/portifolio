@@ -1,0 +1,146 @@
+/* Geral */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: rgb(0, 0, 0);
+    font-family: sans-serif;
+    color: #fff;
+    font-size: 1em;
+    margin-top: 2%;
+    margin-left: 36%;
+    margin-bottom: 10%;
+    justify-content: center;
+}
+
+fieldset{
+    border: 0;
+}
+
+input, select, textarea, button{
+    border-radius: 5px;
+}
+
+label{
+    margin-right: 20px;
+}
+
+/* ID's */
+
+#titulo{
+    font-family: sans-serif;
+    color: #20cbff;
+    margin-left: 15%;
+}
+
+#subtitulo{
+    font-family: sans-serif;
+    color: #20cbff;
+    margin-left: 10%;
+}
+
+#check{
+    display: inline-block;
+}
+
+#camp{
+    color: #00a2ff;
+    text-shadow: #20cbff 0px 0px 100px;
+}
+
+/* Classes */
+
+.azul{
+    color: #20cbff;
+}
+
+.sombra{
+    text-shadow: #8ae4ff 0px 0px 20px;
+}
+
+.campo{
+    margin-bottom: 0.5em;
+}
+
+.campo label{
+    margin-bottom: 0.2em;
+    color: #00a2ff;
+    text-shadow: #20cbff 0px 0px 100px;
+    display: block;
+}
+
+fieldset.grupo .campo{
+    float: left;
+    margin-right: 1em;
+}
+
+.campo input[type="text"], .campo input[type="email"], .campo select, .campo textarea{
+    padding: 0.2em;
+    border: 1px solid #1100ff;
+    box-shadow: 2px 2px 20px #20cbff;
+    display: block;
+}
+
+.campo select option{
+    padding-right: 1em;
+}
+
+.campo input:focus, .campo select:focus, .campo textarea:focus{
+    background: #c2ebf7;
+}
+
+.botao{
+    font-size: 1.2em;
+    background: #20cbff;
+    border: 2px solid #1100ff;
+    box-shadow: #8ae4ff 2px 2px 10px;
+    margin-top: 2.5em;
+    margin-bottom: 1.2em;
+    color: #111;
+    padding: 0.2em 0.6em;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.5s ease-in-out;
+}
+
+.botao, select{
+    cursor: pointer;
+}
+
+.botao:hover{
+    background: none;
+    color: #fff;
+}
+
+.grupo:before , .grupo:after{
+    display: table;
+}
+
+/* Footer */
+
+footer{
+    background: #c6f2ff;
+    color: #111;
+    padding: 20px 25px;
+    text-align: center;
+    margin-top: 20%;
+    margin-left: -57%;
+    margin-bottom: -20%;
+}
+
+footer span a{
+    color: #20cbff;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+footer span a:hover{
+    text-decoration: underline ;
+}

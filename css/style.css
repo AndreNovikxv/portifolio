@@ -89,11 +89,11 @@ html{
 }
 
 .sombra{
-    text-shadow: #8ae4ff 0px 0px 50px;
+    text-shadow: #8ae4ff 0px 0px 20px;
 }
 
 .caixa-sombra{
-    box-shadow: #8ae4ff 0px 0px 15px;
+    box-shadow: #8ae4ff 0px 0px 10px;
 }
 
 .home .max-width{
@@ -292,7 +292,23 @@ section .title::after{
     content: "O que eu fiz";
 }
 
+.card{
+    height: 70vh;
+}
+
+.card a{
+    color: #000;
+    text-decoration: underline;
+    transition: all 0.5s ease-in-out;
+    text-align: end;
+}
+
+.card a:hover{
+    color: #595959;
+}
+
 .projetos .projetos-content .card{
+    margin-bottom: 20px;
     width: calc(33% - 20px);
     background: #222;
     text-align: center;
@@ -425,7 +441,7 @@ section .title::after{
     content: "Niveis";
 }
 
-.idiomas .carousel .card{
+.idiomas .carousel .card-l{
     background: #222;
     border-radius: 5px;
     padding: 20px 30px;
@@ -433,12 +449,12 @@ section .title::after{
     transition: all 0.5s ease-in-out;
 }
 
-.idiomas .carousel .card:hover{
+.idiomas .carousel .card-l:hover{
     background: #20cbff;
     box-shadow: #8ae4ff 0px 0px 15px;
 }
 
-.idiomas .carousel .card img{
+.idiomas .carousel .card-l img{
     width: 150px;
     height: 150px;
     object-fit: cover;
@@ -446,12 +462,12 @@ section .title::after{
     border: 5px solid #20cbff;
 }
 
-.idiomas .carousel .card:hover img{
+.idiomas .carousel .card-l:hover img{
     border: none;
     box-shadow: none;
 }
 
-.idiomas .carousel .card .box{
+.idiomas .carousel .card-l .box{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -459,11 +475,11 @@ section .title::after{
     transition: all 0.5s ease-in-out;
 }
 
-.idiomas .carousel .card:hover .box{
+.idiomas .carousel .card-l:hover .box{
     transform: scale(1.05);
 }
 
-.idiomas .carousel .card .text{
+.idiomas .carousel .card-l .text{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
@@ -520,6 +536,8 @@ section .title::after{
 
 .contact .contact-content .left .icons{
     margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
 }
 
 .contact .contact-content .row{
@@ -536,8 +554,42 @@ section .title::after{
     font-weight: 500;
 }
 
-.contact .contact-content .row ion-icon{
+.contact .contact-content .row .verde{
     font-size: 25px;
+    color: #90ee90;
+    transition: all 0.5s ease-in-out;
+}
+
+.contact .contact-content .row .verde:hover{
+    color: #20cbff;
+}
+
+.contact .contact-content .row .iris{
+    font-size: 25px;
+    color: #b5008e;
+}
+
+/* #f9dc64, #ff553e, */
+
+.contact .contact-content .row .iris:hover{
+    color: #20cbff;
+}
+
+.contact .contact-content .row .azul{
+    font-size: 25px;
+    color: #0e76a8;
+}
+
+.contact .contact-content .row .azul:hover{
+    color: #20cbff;
+}
+
+.contact .contact-content .row .branco{
+    font-size: 25px;
+    color: #fff;
+}
+
+.contact .contact-content .row .branco:hover{
     color: #20cbff;
 }
 

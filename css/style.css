@@ -555,7 +555,7 @@ section .title::after{
 }
 
 .contact .contact-content .row .verde{
-    font-size: 25px;
+    font-size: 35px;
     color: #90ee90;
     transition: all 0.5s ease-in-out;
 }
@@ -565,8 +565,9 @@ section .title::after{
 }
 
 .contact .contact-content .row .iris{
-    font-size: 25px;
+    font-size: 35px;
     color: #b5008e;
+    transition: all 0.5s ease-in-out;
 }
 
 /* #f9dc64, #ff553e, */
@@ -576,8 +577,9 @@ section .title::after{
 }
 
 .contact .contact-content .row .azul{
-    font-size: 25px;
+    font-size: 35px;
     color: #0e76a8;
+    transition: all 0.5s ease-in-out;
 }
 
 .contact .contact-content .row .azul:hover{
@@ -585,8 +587,9 @@ section .title::after{
 }
 
 .contact .contact-content .row .branco{
-    font-size: 25px;
+    font-size: 35px;
     color: #fff;
+    transition: all 0.5s ease-in-out;
 }
 
 .contact .contact-content .row .branco:hover{
@@ -715,14 +718,18 @@ footer span a:hover{
 
     .navbar .menu{
         position: fixed;
-        width: 100%;
+        width: 50%;
         height: 100vh;
         left: -100%;
         top: 0px;
-        background: #111;
+        background: #000010be;
         padding-top: 80px;
         text-align: center;
         transition: all 0.5s ease-in-out;
+    }
+
+    .navbar .menu.active{
+        left: 0;
     }
 
     .navbar .menu li{

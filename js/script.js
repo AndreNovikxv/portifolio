@@ -1,3 +1,4 @@
+//scroll menu
 $(document).ready(function(){
     $(window).scroll(function(){
         if(this.scrollY > 20){
@@ -14,10 +15,13 @@ $(document).ready(function(){
         $('html').animate({scrollTop:0})
     })
 
+    //click hamburguer
     $('.menu-btn').click(function(){
-        $('.navbar .menu').toggleClass("active")
-        $('.menu-btn i').toggleClass("active")
+        $('.navbar .menu').toggleClass('active')
+        $('.menu-btn i').toggleClass('active')
     })
+
+    //carrossel
     $('.carousel').owlCarousel({
         margin:20,
         loop:true,

@@ -297,14 +297,14 @@ section .title::after{
 }
 
 .card a{
-    color: #000;
+    color: #fff;
     text-decoration: underline;
     transition: all 0.5s ease-in-out;
     text-align: end;
 }
 
 .card a:hover{
-    color: #595959;
+    color: #000;
 }
 
 .projetos .projetos-content .card{

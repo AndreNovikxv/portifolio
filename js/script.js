@@ -15,10 +15,25 @@ $(document).ready(function(){
         $('html').animate({scrollTop:0})
     })
 
+    // Digita e apaga
+    var typed = new Typed(".typing", {
+        strings: ["Front-End Developer", "Freelancer", "FullStack Developer", "Web Designer"],
+        typedSpeed: 100,
+        backSpeed: 60,
+        loop: true
+    })
+
     //click hamburguer
     $('.menu-btn').click(function(){
         $('.navbar .menu').toggleClass('active')
         $('.menu-btn i').toggleClass('active')
+    })
+
+    var typed = new Typed(".typing-2", {
+        strings: ["Front-End Developer", "Freelancer", "FullStack Developer", "Web Designer"],
+        typedSpeed: 100,
+        backSpeed: 60,
+        loop: true
     })
 
     //carrossel
